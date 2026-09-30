@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TechZone Abidjan — Accessoires téléphone</title>
+<meta name="description" content="Coques, chargeurs, écouteurs et plus. Livraison à Abidjan, paiement à la livraison.">
+<meta name="theme-color" content="#0A0E1A">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icons/logo.svg"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="promo" id="promo"></div>
+<header class="nav"><a class="brand" href="#accueil"><img src="icons/logo.svg" alt="" width="34" height="34"><span>TechZone</span></a>
+<nav class="menu" aria-label="Menu principal"><a href="#accueil">Accueil</a><a href="#produits">Produits</a><a href="#livraison">Livraison</a><a href="#contact">Contact</a></nav>
+<div class="acts"><button class="btn sm ghost" id="install" hidden>Installer l'app</button>
+<button class="ic" id="favTop" aria-label="Voir mes favoris">♥<i id="favCount">0</i></button>
+<button class="ic" id="cartTop" aria-label="Ouvrir le panier">🛒<i id="cartCount">0</i></button></div></header>
+<main>
+<section id="accueil" class="hero reveal">
+<div class="bento">
+<div class="b b-title"><h1>Vos accessoires, <br>livrés à Abidjan.</h1><p>Coques, chargeurs, écouteurs : l'essentiel pour votre téléphone, au bon prix.</p>
+<div class="cta"><a class="btn" href="#produits">Voir les produits</a><a class="btn ghost" href="#steps">Comment commander</a></div></div>
+<div class="b b-img"><div class="frame"><img src="images/accueil.jpg" alt="Accessoires TechZone" data-e="📱"><img class="small" src="images/accueil2.jpg" alt="" data-e="🎧"></div></div>
+<div class="b"><b>🛡️ Garantie</b><span>Produits testés avant envoi</span></div>
+<div class="b"><b>🚚 Livraison Abidjan</b><span>Dès 1 000 FCFA, offerte dès <em id="fd"></em></span></div>
+<div class="b"><b>💵 Paiement livraison</b><span>Vous payez à la réception</span></div>
+<div class="b"><b>💬 Service WhatsApp</b><span>Réponse rapide, 7j/7</span></div>
+</div></section>
+<section id="produits" class="sec reveal"><h2>Nos produits</h2>
+<div class="tools"><input id="search" type="search" placeholder="Rechercher un article…" aria-label="Rechercher"><select id="sort" aria-label="Trier"><option value="">Trier par</option><option value="asc">Prix croissant</option><option value="desc">Prix décroissant</option></select></div>
+<div class="chips" id="chips"></div><div class="grid" id="grid"></div></section>
+<section id="livraison" class="sec reveal"><h2>Livraison</h2>
+<div class="acc"><button class="acc-h" id="accH" aria-expanded="true">Choisir ma commune <span id="accV">▾</span></button><div class="acc-b" id="accB"></div></div>
+<p class="muted">Livraison offerte dès <span id="fd2"></span> d'achat.</p></section>
+<section id="steps" class="sec reveal"><h2>Commander en 3 étapes</h2><ol class="steps"><li>Ajoutez vos articles au panier.</li><li>Choisissez votre commune et votre adresse.</li><li>Envoyez la commande sur WhatsApp, payez à la livraison.</li></ol></section>
+</main>
+<footer id="contact"><b>TechZone Abidjan</b><p>Lundi – Samedi : 8h – 20h · Dimanche : 10h – 16h</p><a class="btn" id="waFoot" target="_blank" rel="noopener">Nous écrire sur WhatsApp</a></footer>
+<a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<nav class="bottom" aria-label="Navigation mobile"><a href="#accueil">🏠<span>Accueil</span></a><a href="#produits">🛍️<span>Produits</span></a><a href="#livraison">🚚<span>Livraison</span></a><a href="#contact">💬<span>Contact</span></a></nav>
+<div class="ov" id="ov"></div>
+<aside class="cart" id="cart" aria-label="Panier" aria-hidden="true"></aside>
+<div class="modal" id="modal" aria-hidden="true"><div class="box" id="box" role="dialog" aria-modal="true"></div></div>
+<div class="light" id="light"><img alt=""></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body></html>

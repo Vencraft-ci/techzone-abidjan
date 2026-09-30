@@ -1,0 +1,34 @@
+TECHZONE ABIDJAN — site boutique PWA (HTML/CSS/JS, sans framework)
+
+TEST EN LOCAL
+  Double-clic sur index.html (l'installation PWA et le mode hors ligne demandent HTTPS ou localhost).
+  Avec localhost : python3 -m http.server 8000  puis http://localhost:8000
+
+HÉBERGEMENT (HTTPS obligatoire pour la PWA)
+  Netlify : glissez le dossier sur app.netlify.com/drop.
+  GitHub Pages : envoyez les fichiers dans un dépôt, Settings > Pages.
+
+IMAGES (dossier images/, en .jpg) — nom du fichier → produit
+  accueil.jpg   → grande photo d'accueil
+  accueil2.jpg  → petite photo d'accueil
+  article1.jpg  → Coque Antichoc MagSafe
+  article2.jpg  → Verre Trempé 9H Anti-casse
+  article3.jpg  → Chargeur Rapide 33W USB-C
+  article4.jpg  → Câble USB-C Tressé 1 m
+  article5.jpg  → Écouteurs Bluetooth Sans Fil
+  article6.jpg  → Powerbank 20 000 mAh
+  article7.jpg  → Support Téléphone Voiture
+  article8.jpg  → Trépied Selfie + Ring Light
+  article9.jpg  → Montre Connectée Sport
+  article10.jpg → Enceinte Bluetooth Étanche
+  Sans image, un emoji sur fond coloré s'affiche.
+
+MODIFICATIONS (en haut de script.js)
+  Numéro WhatsApp : WHATSAPP_NUMBER (ex : 2250707070707)
+  Livraison offerte dès : FREE_DELIVERY_FROM (actuellement 10000)
+  Tarifs de livraison : tableau ZONES
+  Prix, noms, couleurs d'accent : tableau PRODUCTS (price, name, accent)
+  Après chaque mise à jour : changez CACHE_VERSION dans sw.js.
+
+ICÔNES (dossier icons/) : logo.svg, icon-192.png, icon-512.png, icon-maskable-512.png,
+  apple-touch-icon.png (180x180), profil-whatsapp-640.png (photo de profil WhatsApp).
